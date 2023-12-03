@@ -1,0 +1,131 @@
+body {
+    background-color: rgb(226, 226, 226);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    height: 100vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h1 {
+    margin-top: 20px; 
+}
+form {
+    background-color: rgb(226, 226, 226);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 0px;
+    
+}
+
+#todos {
+    color: #000000;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#todo-error {
+    color: rgb(248, 0, 0);
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border: 0px solid;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 150px;
+    border-radius: 5px;
+    height: 20px;
+}
+
+button.delete-button {
+    font-size: 11px; 
+    padding: 5px 10px; 
+    width: auto; 
+    border-radius: 5px;
+}
+
+
+
+.todos-c {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgb(199, 199, 199);
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    border-radius: 10px;
+}
+
+input[name='todo'] {
+    height: 30px; 
+    font-size: 16px; 
+}
+
+#todos {
+    color: #000000;
+    font-size: 20px;
+  }
+  
+  #todos li {
+    margin-bottom: 10px;
+  }
+  
+  #todos li.completed {
+    text-decoration: line-through;
+    color: #7a7979; 
+  }
+  
+  button.delete-button {
+    font-size: 11px;
+    padding: 5px 10px;
+    width: auto;
+    border-radius: 5px;
+    margin-left: 10px; 
+  }
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 10px;
+    border: 1px solid #888;
+    width: 60%; 
+    
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
