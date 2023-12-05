@@ -125,13 +125,17 @@ async function deleteTodo(todoId, completed) {
 
 // Add event listener for todo item clicks to get completion status
 document.querySelector("#todos").addEventListener("click", async (event) => {
-  const todoId = event.target.getAttribute("data-id");
-  const isCompleted = event.target.classList.contains("completed");
+  const todoListItem = event.target.closest("li");
 
-  if (isCompleted) {
-    await updateTodoStatus(todoId, false);
-  } else {
-    await updateTodoStatus(todoId, true);
+  if (todoListItem) {
+    const todoId = todoListItem.getAttribute("data-id");
+    const isCompleted = todoListItem.classList.contains("completed");
+
+    if (isCompleted) {
+      await updateTodoStatus(todoId, false);
+    } else {
+      await updateTodoStatus(todoId, true);
+    }
   }
 });
 
